@@ -14,7 +14,7 @@ export const business = {
   },
   links: {
     privacy: { en: "/en/privacy", ko: "/ko/privacy" },
-    customOrder: { en: "/en/custom-order", ko: "/ko/custom-order" },
+    customOrder: { en: "/en/order", ko: "/ko/order" },
     products: { en: "/en/find-our-products", ko: "/ko/find-our-products" },
     gallery: { en: "/en/gallery", ko: "/ko/gallery" },
   },
