@@ -97,7 +97,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
               {content.hero.secondaryIntro}
             </p>
             <div className="hero-actions">
-              <a className="button" href="#final-invitation">
+              <a className="button" href={business.links.customOrder[locale]}>
                 {content.hero.request}
               </a>
               <a className="text-link" href="#gallery">
@@ -342,7 +342,7 @@ export default async function Home({ params }: PageProps<"/[locale]">) {
           >
             <h2>{content.footer.navigation}</h2>
             <a href={`/${locale}`}>{content.nav.home}</a>
-            <a href="#ordering">{content.nav.order}</a>
+            <a href={business.links.customOrder[locale]}>{content.nav.order}</a>
             <a href="#store">{content.nav.products}</a>
             <a href="#gallery">{content.nav.gallery}</a>
             <a href={business.links.privacy[locale]}>

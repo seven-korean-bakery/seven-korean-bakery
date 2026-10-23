@@ -1139,3 +1139,114 @@ h3 {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Custom order inquiry uses the shared brand palette and typography. */
+.inquiry-page {
+  max-width: 860px;
+  padding-block: 48px 80px;
+}
+.inquiry-page h1 {
+  color: var(--brown);
+  font-family: var(--font-heading);
+  font-size: clamp(28px, 4vw, 40px);
+}
+.inquiry-notice {
+  margin-block: 24px;
+}
+.inquiry-unavailable,
+.inquiry-summary {
+  padding: 20px;
+  margin-block: 24px;
+  border: 1px solid var(--brown);
+  background: var(--beige);
+}
+.inquiry-summary a {
+  text-decoration: underline;
+}
+.inquiry-summary ul {
+  padding-left: 24px;
+  list-style: disc;
+}
+.inquiry-page fieldset {
+  min-width: 0;
+  margin-top: 32px;
+  padding: 24px 0;
+  border-top: 1px solid var(--line);
+}
+.inquiry-page legend {
+  padding-right: 16px;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  color: var(--brown);
+}
+.inquiry-grid {
+  display: grid;
+  gap: 24px;
+}
+.inquiry-field {
+  min-width: 0;
+}
+.inquiry-field label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.inquiry-field label span {
+  font-weight: 400;
+}
+.inquiry-field input,
+.inquiry-field textarea {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: 48px;
+  padding: 10px 12px;
+  border: 1px solid var(--muted);
+  border-radius: 2px;
+  background: #fffdf8;
+  color: var(--ink);
+  font: inherit;
+  font-size: 16px;
+}
+.inquiry-field textarea {
+  resize: vertical;
+}
+.inquiry-page :focus-visible {
+  outline: 3px solid var(--brown);
+  outline-offset: 3px;
+}
+.inquiry-field [aria-invalid="true"] {
+  border-color: #9b2923;
+}
+.inquiry-help {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--muted);
+}
+.inquiry-error {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #9b2923;
+}
+.inquiry-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 24px;
+}
+.inquiry-actions .button {
+  white-space: normal;
+}
+.inquiry-actions button:disabled {
+  background: var(--beige);
+  color: var(--brown);
+  cursor: not-allowed;
+}
+@media (min-width: 640px) {
+  .inquiry-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .inquiry-wide {
+    grid-column: 1 / -1;
+  }
+}

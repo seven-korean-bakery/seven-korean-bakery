@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 import type { Locale } from "@/lib/locales";
 import { getContent } from "@/content";
@@ -9,13 +10,14 @@ import { business } from "@/lib/business";
 
 export function SiteHeader({ locale }: { locale: Locale }) {
   const content = getContent(locale);
+  const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const otherLocale = locale === "en" ? "ko" : "en";
   const navItems = [
     { href: `/${locale}`, label: content.nav.home },
-    { href: "#ordering", label: content.nav.order },
-    { href: "#store", label: content.nav.products },
-    { href: "#gallery", label: content.nav.gallery },
+    { href: business.links.customOrder[locale], label: content.nav.order },
+    { href: `/${locale}#store`, label: content.nav.products },
+    { href: `/${locale}#gallery`, label: content.nav.gallery },
   ];
 
   return (
@@ -69,7 +71,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
         <div className="header-actions">
           <Link
             className="language-toggle"
-            href={`/${otherLocale}`}
+            href={`/${otherLocale}${pathname.slice(locale.length + 1)}`}
             aria-label={`${content.nav.language}: ${otherLocale === "en" ? content.nav.englishLanguageName : content.nav.koreanLanguageName}`}
           >
             {locale === "en"
@@ -78,7 +80,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
           </Link>
           <a
             className="button button-small header-order"
-            href="#final-invitation"
+            href={business.links.customOrder[locale]}
           >
             {content.nav.request}
           </a>
@@ -111,7 +113,10 @@ export function SiteHeader({ locale }: { locale: Locale }) {
               {item.label}
             </a>
           ))}
-          <a href="#final-invitation" onClick={() => setMenuOpen(false)}>
+          <a
+            href={business.links.customOrder[locale]}
+            onClick={() => setMenuOpen(false)}
+          >
             {content.nav.request}
           </a>
         </nav>

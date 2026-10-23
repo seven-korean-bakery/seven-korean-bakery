@@ -1,6 +1,47 @@
 import type ko from "./ko";
 
 const en: typeof ko = {
+  orderInquiry: {
+    title: "Custom Order Inquiry",
+    intro: "Tell us what you have in mind for your next gathering.",
+    notice:
+      "An inquiry is not a confirmed order. Bakery staff will contact you by phone to discuss availability, pricing, and pickup before confirming your order.",
+    unavailable:
+      "Online submissions are not yet available. This form is a preview only: nothing is sent or saved. Please call the bakery to make an inquiry.",
+    contact: "Phone inquiries",
+    required: "Fields marked * are required.",
+    optional: "(optional)",
+    customer: "Your details",
+    order: "Order & pickup",
+    check: "Check details (does not send)",
+    submit: "Submission unavailable",
+    valid:
+      "Details checked. Nothing has been sent. Online submissions are not yet available; please call the bakery.",
+    summary: "Please correct the following fields.",
+    name: "Customer name",
+    phone: "Phone number",
+    email: "Email",
+    product: "Product / order type",
+    quantity: "Quantity",
+    date: "Preferred pickup date",
+    time: "Preferred pickup time",
+    occasion: "Occasion",
+    requests: "Special requests",
+    productHelp: "Describe the rice cakes or type of order you have in mind.",
+    quantityHelp:
+      "Enter a whole number. Describe the units (pieces, boxes, etc.) in special requests.",
+    dateHelp:
+      "Choose today or a future date in Vancouver. Availability will be confirmed by phone.",
+    requestsHelp:
+      "Include quantities by product, preferences, or questions. Please do not include sensitive personal information.",
+    requiredError: "Please complete this field.",
+    phoneError: "Enter a valid phone number with 7–15 digits.",
+    emailError: "Enter a valid email address.",
+    quantityError: "Enter a whole number greater than zero.",
+    dateError: "Choose a valid date today or later in Vancouver.",
+    timeError: "Enter a valid pickup time.",
+    lengthError: "This entry is too long. Please shorten it.",
+  },
   siteTitle: "7 Korean Bakery",
   metadataDescription:
     "7 Korean Bakery in Coquitlam prepares Korean rice cakes for celebrations, gifts, and family gatherings.",
