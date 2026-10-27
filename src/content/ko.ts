@@ -1,7 +1,8 @@
 const ko = {
   orderInquiry: {
     title: "맞춤 주문 문의",
-    intro: "소중한 모임을 위해 원하시는 내용을 알려 주세요.",
+    intro:
+      "특별한 행사부터 일상의 간식, 감사의 선물까지. 원하시는 내용을 알려 주세요.",
     notice:
       "문의는 확정된 주문이 아닙니다. 떡집 직원이 전화로 연락드려 주문 가능 여부, 가격, 픽업 정보를 상담한 후 주문을 확정합니다.",
     unavailable:
@@ -10,7 +11,7 @@ const ko = {
     required: "* 표시 항목은 필수입니다.",
     optional: "(선택)",
     customer: "고객 정보",
-    order: "주문 및 픽업 정보",
+    order: "주문 내용",
     check: "입력 내용 확인 (전송되지 않음)",
     submit: "온라인 접수 준비 중",
     valid:
@@ -19,19 +20,12 @@ const ko = {
     name: "성함",
     phone: "전화번호",
     email: "이메일",
-    product: "제품 / 주문 종류",
-    quantity: "수량",
+    quantity: "답례품 수량",
     date: "희망 픽업 날짜",
     time: "희망 픽업 시간",
-    occasion: "행사 / 용도",
-    requests: "특별 요청 사항",
-    productHelp: "원하시는 떡이나 주문 종류를 적어 주세요.",
-    quantityHelp:
-      "정수를 입력해 주세요. 개, 상자 등의 단위는 특별 요청 사항에 적어 주세요.",
+    requests: "추가 주문 내용 및 요청 사항",
     dateHelp:
       "밴쿠버 기준 오늘 또는 이후 날짜를 선택해 주세요. 가능 여부는 전화로 확인합니다.",
-    requestsHelp:
-      "제품별 수량, 선호 사항 또는 질문을 적어 주세요. 민감한 개인정보는 입력하지 마세요.",
     requiredError: "필수 항목을 작성해 주세요.",
     phoneError: "숫자 7~15자리의 올바른 전화번호를 입력해 주세요.",
     emailError: "올바른 이메일 주소를 입력해 주세요.",
@@ -39,6 +33,67 @@ const ko = {
     dateError: "밴쿠버 기준 오늘 또는 이후의 올바른 날짜를 선택해 주세요.",
     timeError: "올바른 픽업 시간을 입력해 주세요.",
     lengthError: "내용이 너무 깁니다. 줄여 주세요.",
+    purpose: "어떤 용도로 주문하시나요?",
+    eventType: "행사 종류",
+    eventOther: "어떤 행사인지 알려 주세요",
+    eventCount: "예상 인원 또는 수량",
+    eventCountUnit: "인원 / 수량 기준",
+    products: "희망하는 떡 종류",
+    everydayDetails: "어떤 떡을 원하시나요?",
+    budget: "개당 예산 (캐나다 달러)",
+    lidPrinting: "포장 뚜껑에 맞춤 인쇄를 원하시나요?",
+    printedMessage: "인쇄할 문구",
+    allergies: "알레르기가 있나요?",
+    allergyDetails: "알레르기 정보 또는 우려 사항",
+    pickup: "픽업 희망 일정",
+    preferences: "알레르기 및 요청 사항",
+    select: "선택해 주세요",
+    everydayHelp: "원하시는 떡 종류, 수량, 선호 사항을 자유롭게 적어 주세요.",
+    allergyNotice:
+      "알레르기 관련 요청의 반영 가능 여부와 교차 접촉 위험은 주문 확정 전 떡집 직원과 반드시 확인해 주세요.",
+    priceNotice:
+      "답례품은 개당 CAD $8부터 시작하며, 최종 가격은 떡 구성과 포장에 따라 달라집니다.",
+    photoTitle: "맞춤 뚜껑 인쇄",
+    photoPending: "실제 제작 사례 사진을 준비 중입니다.",
+    photoNote: "상담 시 가능한 인쇄 옵션을 문의해 주세요.",
+    purposeOptions: {
+      event: "행사",
+      everyday: "일상",
+      favors: "답례품",
+    },
+    purposeDescriptions: {
+      event: "백일, 생일 등 함께하는 특별한 날",
+      everyday: "매일의 식탁에 함께할 떡",
+      favors: "고마운 마음을 전하는 작은 선물",
+    },
+    eventOptions: {
+      baekil: "백일",
+      dol: "돌잔치",
+      birthday: "생일",
+      corporate: "기업 행사",
+      other: "기타",
+    },
+    budgetOptions: {
+      "8-10": "CAD $8–$10",
+      "10-15": "CAD $10–$15",
+      "15-20": "CAD $15–$20",
+      "20+": "CAD $20 이상",
+      consultation: "상담이 필요해요",
+    },
+    printingOptions: {
+      yes: "예",
+      no: "아니요",
+      unsure: "아직 모르겠어요",
+    },
+    allergyOptions: {
+      no: "없음",
+      yes: "있음",
+      unsure: "잘 모르겠어요",
+    },
+    countOptions: {
+      guests: "인원 (명)",
+      items: "수량 (개)",
+    },
   },
   siteTitle: "일곱시 떡집",
   metadataDescription:

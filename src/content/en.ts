@@ -3,7 +3,8 @@ import type ko from "./ko";
 const en: typeof ko = {
   orderInquiry: {
     title: "Custom Order Inquiry",
-    intro: "Tell us what you have in mind for your next gathering.",
+    intro:
+      "A celebration, an everyday treat, or a small thank-you. Tell us what you have in mind.",
     notice:
       "An inquiry is not a confirmed order. Bakery staff will contact you by phone to discuss availability, pricing, and pickup before confirming your order.",
     unavailable:
@@ -12,7 +13,7 @@ const en: typeof ko = {
     required: "Fields marked * are required.",
     optional: "(optional)",
     customer: "Your details",
-    order: "Order & pickup",
+    order: "Your order",
     check: "Check details (does not send)",
     submit: "Submission unavailable",
     valid:
@@ -21,19 +22,12 @@ const en: typeof ko = {
     name: "Customer name",
     phone: "Phone number",
     email: "Email",
-    product: "Product / order type",
-    quantity: "Quantity",
+    quantity: "Number of favors",
     date: "Preferred pickup date",
     time: "Preferred pickup time",
-    occasion: "Occasion",
-    requests: "Special requests",
-    productHelp: "Describe the rice cakes or type of order you have in mind.",
-    quantityHelp:
-      "Enter a whole number. Describe the units (pieces, boxes, etc.) in special requests.",
+    requests: "Additional details & special requests",
     dateHelp:
       "Choose today or a future date in Vancouver. Availability will be confirmed by phone.",
-    requestsHelp:
-      "Include quantities by product, preferences, or questions. Please do not include sensitive personal information.",
     requiredError: "Please complete this field.",
     phoneError: "Enter a valid phone number with 7–15 digits.",
     emailError: "Enter a valid email address.",
@@ -41,6 +35,68 @@ const en: typeof ko = {
     dateError: "Choose a valid date today or later in Vancouver.",
     timeError: "Enter a valid pickup time.",
     lengthError: "This entry is too long. Please shorten it.",
+    purpose: "What are you ordering for?",
+    eventType: "Event type",
+    eventOther: "Tell us about your event",
+    eventCount: "Estimated guest count or quantity",
+    eventCountUnit: "Count by",
+    products: "Preferred rice cakes",
+    everydayDetails: "Which rice cakes would you like?",
+    budget: "Budget per item (CAD)",
+    lidPrinting: "Custom printing on the package lid?",
+    printedMessage: "Desired printed message",
+    allergies: "Any allergies?",
+    allergyDetails: "Allergy details or concerns",
+    pickup: "Pickup preferences",
+    preferences: "Allergies & requests",
+    select: "Please select",
+    everydayHelp:
+      "Tell us the rice cakes, quantities, and preferences you have in mind.",
+    allergyNotice:
+      "Bakery staff must confirm allergy accommodations and cross-contact risks before your order is confirmed.",
+    priceNotice:
+      "Pricing starts at CAD $8 per item. Final pricing depends on product selection and packaging.",
+    photoTitle: "Custom lid printing",
+    photoPending: "Real bakery examples will be added here.",
+    photoNote: "Ask us about printing options during your consultation.",
+    purposeOptions: {
+      event: "Event",
+      everyday: "Everyday",
+      favors: "Return Gifts / Favors",
+    },
+    purposeDescriptions: {
+      event: "For celebrations and gatherings",
+      everyday: "Rice cakes for your everyday table",
+      favors: "A thoughtful thank-you to share",
+    },
+    eventOptions: {
+      baekil: "100-day celebration",
+      dol: "First Birthday",
+      birthday: "Birthday",
+      corporate: "Corporate Event",
+      other: "Other",
+    },
+    budgetOptions: {
+      "8-10": "CAD $8–$10",
+      "10-15": "CAD $10–$15",
+      "15-20": "CAD $15–$20",
+      "20+": "CAD $20+",
+      consultation: "Consultation needed",
+    },
+    printingOptions: {
+      yes: "Yes",
+      no: "No",
+      unsure: "Not sure",
+    },
+    allergyOptions: {
+      no: "None",
+      yes: "Yes",
+      unsure: "Not sure",
+    },
+    countOptions: {
+      guests: "Guests",
+      items: "Items",
+    },
   },
   siteTitle: "7 Korean Bakery",
   metadataDescription:
